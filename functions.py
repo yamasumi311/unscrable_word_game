@@ -16,22 +16,7 @@ def scramble(word):
     scramble_word = ''
     for i in letters:
         scramble_word = scramble_word + i
-    print(f"Question: {scramble_word}")
     return scramble_word
-
-def check_word(word, guess, shuffled_word):
-    # when guessed correctly
-    if guess == word:
-        print("You guessed correctly!")
-        return True
-    # when revealing answer
-    elif guess == 'q':
-        return word
-    # when guessed incorrectly
-    else:
-        print("Incorrect")
-        return False
-
 
 # make a scrambled word
 def make_scrambled_word(words):
@@ -40,4 +25,7 @@ def make_scrambled_word(words):
     # make the word scrambled
     scrambled_word = scramble(word)
     return scrambled_word, word
+
+
+
 
